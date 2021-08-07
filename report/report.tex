@@ -1,0 +1,42 @@
+\documentclass[titlepage, 11pt]{article}
+\input{preamble.tex}
+
+\title{
+	\textbf{Mini Project 2: Deep Learning} \\
+	Machine learning (CS582), MIU \thanks{Instructor: Anthony Sander}
+}
+
+\author{
+    Baraa Mousa Noufal \and Ivan Krasowski Bissio
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\begin{abstract}
+	\addcontentsline{toc}{section}{Abstract}
+	\input{abstract.tex}
+\end{abstract}
+
+\section{About the Dataset}
+The chosen dataset is a mix of two web-available datasets:
+% \href{https://www.kaggle.com/rounakbanik/the-movies-dataset}{The Movies Dataset}
+% We opted for these datasets because they give us enough movies with representative information, including ratings from users,
+% which allows us to develop the three kinds of recommenders we are trying to build.
+
+\subsection{EDA: Exploratory Data Analysis}
+\input{dataset/eda.tex}
+
+\section{Experiment 1}
+\input{sections/experiment-1.tex}
+
+\section{Experiment 2}
+\input{sections/experiment-2.tex}
+
+\clearpage
+\section{Conclusion}
+\input{conclusion.tex}
+
+\end{document}
