@@ -1,0 +1,9 @@
+For better estimations (by reducing the variance on the weights of the model),
+we do some preprocessing on the data:
+\begin{itemize}
+    \item Change from color input images (3 channels [0-255], RGB) to grayscale (1 channel [0-255])
+    \item Normalize the input values to [0-1]
+    \item One-hot encode the output labels (to get categories instead of weighted scalars)
+    \item Shuffle the elements and divide them in batches (chosen size: 16)
+    \item For models 2 and distiller, repeat the dataset 4 times (simple upsampling) 
+\end{itemize}
