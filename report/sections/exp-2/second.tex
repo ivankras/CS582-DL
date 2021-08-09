@@ -60,8 +60,8 @@ The second model is an improved version using roughly the same architecture as t
 This is a VGG-style network with 3 blocks compromised of 2 convolution layers and a pooling layer, followed by a dense fully connected layer for classification.
 The ReLU\footnote{\href{https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/}{https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/}} activation function is used at each layer, and the loss function of the network is Cross Entropy\footnote{\href{https://www.tensorflow.org/api\_docs/python/tf/keras/losses/CategoricalCrossentropy}{https://www.tensorflow.org/api\_docs/python/tf/keras/losses/CategoricalCrossentropy}}
 Batch Normalization is applied after each convolution layer.
-Increasing dropout starting at 20% after the first convolution block going up to 50% at the final dense layer is applied.
-This model resulted in an improved 85% accuracy after 50 epochs, and as indicated by the learning curve, it can definitely benefit from more training epochs, and the overfitting problem from the previous model is now gone.
+Increasing dropout starting at 20\% after the first convolution block going up to 50\% at the final dense layer is applied.
+This model resulted in an improved 85\% accuracy after 50 epochs, and as indicated by the learning curve, it can definitely benefit from more training epochs, and the overfitting problem from the previous model is now gone.
 \begin{center}
     \captionsetup{type=figure}
     \includegraphics[width=250px]{sections/exp-2/images/improved-plot.png}

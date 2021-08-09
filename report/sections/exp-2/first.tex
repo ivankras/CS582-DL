@@ -38,7 +38,7 @@ _________________________________________________________________
 This is a VGG-style network with 3 blocks compromised of 2 convolution layers and a pooling layer, followed by a dense fully connected layer for classification.
 The ReLU\footnote{\href{https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/}{https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/}} activation function is used at each layer, and the loss function of the network is Cross Entropy\footnote{\href{https://www.tensorflow.org/api\_docs/python/tf/keras/losses/CategoricalCrossentropy}{https://www.tensorflow.org/api\_docs/python/tf/keras/losses/CategoricalCrossentropy}}
 The network is optimized using the Adam algorithm\footnote{\href{https://keras.io/api/optimizers/adam/}{https://keras.io/api/optimizers/adam/}}.
-This model gave an accuracy of about 83% after 50 epochs, but the learning curve indicates overfitting happening early on.
+This model gave an accuracy of about 83\% after 50 epochs, but the learning curve indicates overfitting happening early on.
 \begin{center}
     \captionsetup{type=figure}
     \includegraphics[width=250px]{sections/exp-2/images/initial-plot.png}
