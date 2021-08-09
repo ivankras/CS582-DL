@@ -1,11 +1,10 @@
-% Different approaches, metrics, algorithms for the same data can gives us very diverse recommendations, depending on our interests.
-% From this project, we understand that the important part of getting an accurate recommender is interpreting well our data, and what we want from it
-% (for instance, going from a simple general demographic recommendation up to a personalized recommendation based in our previous preferences and the collaboration of others).
+There are many ways in which one can approach a complex problem such as image classification, and a deep understanding of all the parameters that can affect a deep learning approach is necessary.
+When building a convolutional neural network, understanding how to interpret experimental results is crucial, we learned that adjusting the batch size can affect the training speed of a network, with a potential cost to accuracy, CNNs overfit rather quickly if no proper dropout parameter is set, and data normalization is extremely important for the performance of the network.
 
-% \subsection*{Future Work}
-% \begin{itemize}
-%     % \item As mentioned on the corresponding section, the \emph{weighted average rating} is a metric developed by IMDb, and found to be useful for them. There might be different metrics with better results for our demographic filtering, still waiting for us to try them.
-%     % \item Similarly, the Content-based recommender might be improved by adding/removing features to the similarity calculation, or even changing the coefficient. To be certain of this, experimentation is required.
-%     % \item Regarding the Neural Collaborative approach, train the model with a larger dataset, and check whether the layers disposition or the hyperparameters can be tweaked into a better performance.
-%     % \item With the same idea, the response times for the web-service can be optimized, either by improving the caching system or even the algorithm.
-% \end{itemize}
+\subsection*{Future Work}
+\begin{itemize}
+    \item The first experiment had problems with the distillation process, from the point of view that it didn't improve very much the same model traditionally trained. Maybe more data, a different network or different hyperparameters could change that
+    \item For the second experiment, results show that more training epochs may provide a more accurate model, we may look into increasing the number of epochs or introducing an early stopping criteria as we did in the first experiment
+    \item Further experimentation with simpler models based on our new learnings from our models and better tuning of the hyperparameters
+    \item Application of knowledge distillation on the improved model from the second experiment
+\end{itemize}
